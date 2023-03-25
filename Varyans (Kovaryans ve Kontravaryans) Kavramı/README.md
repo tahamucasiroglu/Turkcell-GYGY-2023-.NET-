@@ -6,7 +6,7 @@
 
 Temelden başlarsak, **C#** içindeki veri tipleri **object** adı verilen sınıftan türetilmiştir. Bu sayede tercih edilmese de aşağıdaki gibi bir üretimde **Visual Studio** hata vermez.
 
-![resim bulunamadı](Varyans%20(Kovaryans%20ve%20Kontravaryans)%20Kavramı/img/1.png)
+![resim bulunamadı](img/1.png)
 
 Bunun sebebi **baba-çocuk** ilişkisidir. Bu şekilde veri üretmek veya kendi tipini baştan belirterek üretmek arasında ise çok önemli bir fark vardır. Bu fark **veri tipinin fonksiyonlarıdır**. 
 
