@@ -42,7 +42,7 @@ işte burada patlarız. normalde **object** tipi içinde barındırılan sınıf
 
 aslında sorunun çözümü çok kısa **generic interface** içindeki **generic tip** başına **out** eklemek.
 
-![resim bulunamadı](8.png)
+![resim bulunamadı](img/8.png)
 
 gördüğünüz gibi hata mesajı kayboldu. Peki ben bunu bu şekilde anlattım ve muhtemelen bilmediğiniz bir şey olduğu içinde kafanız karıştı. Bu **out** ne ne işimize yarıyor gibi sorular oluşacaktır. Dahada ilginci bunun birde **in** kelimesi var. Bunları açıklamaya başlayalım.
 
