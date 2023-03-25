@@ -10,15 +10,15 @@ Temelden başlarsak, **C#** içindeki veri tipleri **object** adı verilen sın�
 
 Bunun sebebi **baba-çocuk** ilişkisidir. Bu şekilde veri üretmek veya kendi tipini baştan belirterek üretmek arasında ise çok önemli bir fark vardır. Bu fark **veri tipinin fonksiyonlarıdır**. 
 
-![resim bulunamadı](Varyans%20(Kovaryans%20ve%20Kontravaryans)%20Kavramı/img/2.png)
+![resim bulunamadı](img/2.png)
 
 Resimde gördüğünüz üzere iki değişkende **string** veri tipinde olmasına rağmen **object** kökenli oluşan değişken sadece 4 adet temel fonksiyonlara sahiptir. 
 
-![resim bulunamadı](Varyans%20(Kovaryans%20ve%20Kontravaryans)%20Kavramı/img/3.png)
+![resim bulunamadı](img/3.png)
 
 Aynı zamanda bu değişkenler arasında eşitlemede yapılabilir.
 
-![resim bulunamadı](Varyans%20(Kovaryans%20ve%20Kontravaryans)%20Kavramı/img/4.png)
+![resim bulunamadı](img/4.png)
 
 Hatta **object** ile üretilen değişkene sonradan kendinden üretilen diğer veri tipleride atanabilir. Python severler bunu beğendi :)
 
@@ -26,15 +26,15 @@ Peki bu gösterdiklerimle konumuzun ne alakası var? Bu yüzden hızlıca **inte
 
 Senaryo olar belirtilen bir tipte dönüştürme yapan bir interfaceimiz olsun. 
 
-![resim bulunamadı](Varyans%20(Kovaryans%20ve%20Kontravaryans)%20Kavramı/img/5.png)
+![resim bulunamadı](5.png)
 
 Peki ne yapacağız bununla derseniz biraz önce **object** ve **string** ile gösterdiğimiz dönüşümleri göstereyim. 
 
-![resim bulunamadı](Varyans%20(Kovaryans%20ve%20Kontravaryans)%20Kavramı/img/6.png)
+![resim bulunamadı](img/6.png)
 
 öncelikle tipleri üretirken bir sorun yaşamadık güzel peki eşitlersek. 
 
-![resim bulunamadı](Varyans%20(Kovaryans%20ve%20Kontravaryans)%20Kavramı/img/7.png)
+![resim bulunamadı](img/7.png)
 
 işte burada patlarız. normalde **object** tipi içinde barındırılan sınıfları kendisine eşitleyebiliyorken bunu **generic interface** kavramıyla uyguladığımızda hata almaktayız. Şimdi bu örneğimiz gerçek hayata uygun veya mantıklı bir örnek değil fakat ileride bu sorunla karşılaştığımızda ne yapmalıyız veya nasıl bir çözüm uygulamalıyız. 
 
@@ -42,7 +42,7 @@ işte burada patlarız. normalde **object** tipi içinde barındırılan sınıf
 
 aslında sorunun çözümü çok kısa **generic interface** içindeki **generic tip** başına **out** eklemek.
 
-![resim bulunamadı](Varyans%20(Kovaryans%20ve%20Kontravaryans)%20Kavramı/img/8.png)
+![resim bulunamadı](8.png)
 
 gördüğünüz gibi hata mesajı kayboldu. Peki ben bunu bu şekilde anlattım ve muhtemelen bilmediğiniz bir şey olduğu içinde kafanız karıştı. Bu **out** ne ne işimize yarıyor gibi sorular oluşacaktır. Dahada ilginci bunun birde **in** kelimesi var. Bunları açıklamaya başlayalım.
 
