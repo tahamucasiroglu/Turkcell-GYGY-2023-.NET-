@@ -26,7 +26,7 @@ Peki bu gösterdiklerimle konumuzun ne alakası var? Bu yüzden hızlıca **inte
 
 Senaryo olar belirtilen bir tipte dönüştürme yapan bir interfaceimiz olsun. 
 
-![resim bulunamadı](5.png)
+![resim bulunamadı](img/5.png)
 
 Peki ne yapacağız bununla derseniz biraz önce **object** ve **string** ile gösterdiğimiz dönüşümleri göstereyim. 
 
