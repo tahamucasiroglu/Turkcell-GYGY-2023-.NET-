@@ -1,0 +1,15 @@
+C:\Dosyalar\Kodlama\Turkcell\Homework_School_Simulation\obj\Debug\net6.0\Homework_School_Simulation.csproj.AssemblyReference.cache
+C:\Dosyalar\Kodlama\Turkcell\Homework_School_Simulation\obj\Debug\net6.0\Homework_School_Simulation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Dosyalar\Kodlama\Turkcell\Homework_School_Simulation\obj\Debug\net6.0\Homework_School_Simulation.AssemblyInfoInputs.cache
+C:\Dosyalar\Kodlama\Turkcell\Homework_School_Simulation\obj\Debug\net6.0\Homework_School_Simulation.AssemblyInfo.cs
+C:\Dosyalar\Kodlama\Turkcell\Homework_School_Simulation\obj\Debug\net6.0\Homework_School_Simulation.csproj.CoreCompileInputs.cache
+C:\Dosyalar\Kodlama\Turkcell\Homework_School_Simulation\bin\Debug\net6.0\Homework_School_Simulation.exe
+C:\Dosyalar\Kodlama\Turkcell\Homework_School_Simulation\bin\Debug\net6.0\Homework_School_Simulation.deps.json
+C:\Dosyalar\Kodlama\Turkcell\Homework_School_Simulation\bin\Debug\net6.0\Homework_School_Simulation.runtimeconfig.json
+C:\Dosyalar\Kodlama\Turkcell\Homework_School_Simulation\bin\Debug\net6.0\Homework_School_Simulation.dll
+C:\Dosyalar\Kodlama\Turkcell\Homework_School_Simulation\bin\Debug\net6.0\Homework_School_Simulation.pdb
+C:\Dosyalar\Kodlama\Turkcell\Homework_School_Simulation\obj\Debug\net6.0\Homework_School_Simulation.dll
+C:\Dosyalar\Kodlama\Turkcell\Homework_School_Simulation\obj\Debug\net6.0\refint\Homework_School_Simulation.dll
+C:\Dosyalar\Kodlama\Turkcell\Homework_School_Simulation\obj\Debug\net6.0\Homework_School_Simulation.pdb
+C:\Dosyalar\Kodlama\Turkcell\Homework_School_Simulation\obj\Debug\net6.0\Homework_School_Simulation.genruntimeconfig.cache
+C:\Dosyalar\Kodlama\Turkcell\Homework_School_Simulation\obj\Debug\net6.0\ref\Homework_School_Simulation.dll
