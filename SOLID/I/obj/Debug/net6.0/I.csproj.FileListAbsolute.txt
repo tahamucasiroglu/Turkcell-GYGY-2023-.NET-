@@ -1,0 +1,15 @@
+C:\Dosyalar\Kodlama\Turkcell\SOLID\I\bin\Debug\net6.0\I.exe
+C:\Dosyalar\Kodlama\Turkcell\SOLID\I\bin\Debug\net6.0\I.deps.json
+C:\Dosyalar\Kodlama\Turkcell\SOLID\I\bin\Debug\net6.0\I.runtimeconfig.json
+C:\Dosyalar\Kodlama\Turkcell\SOLID\I\bin\Debug\net6.0\I.dll
+C:\Dosyalar\Kodlama\Turkcell\SOLID\I\bin\Debug\net6.0\I.pdb
+C:\Dosyalar\Kodlama\Turkcell\SOLID\I\obj\Debug\net6.0\I.csproj.AssemblyReference.cache
+C:\Dosyalar\Kodlama\Turkcell\SOLID\I\obj\Debug\net6.0\I.GeneratedMSBuildEditorConfig.editorconfig
+C:\Dosyalar\Kodlama\Turkcell\SOLID\I\obj\Debug\net6.0\I.AssemblyInfoInputs.cache
+C:\Dosyalar\Kodlama\Turkcell\SOLID\I\obj\Debug\net6.0\I.AssemblyInfo.cs
+C:\Dosyalar\Kodlama\Turkcell\SOLID\I\obj\Debug\net6.0\I.csproj.CoreCompileInputs.cache
+C:\Dosyalar\Kodlama\Turkcell\SOLID\I\obj\Debug\net6.0\I.dll
+C:\Dosyalar\Kodlama\Turkcell\SOLID\I\obj\Debug\net6.0\refint\I.dll
+C:\Dosyalar\Kodlama\Turkcell\SOLID\I\obj\Debug\net6.0\I.pdb
+C:\Dosyalar\Kodlama\Turkcell\SOLID\I\obj\Debug\net6.0\I.genruntimeconfig.cache
+C:\Dosyalar\Kodlama\Turkcell\SOLID\I\obj\Debug\net6.0\ref\I.dll
