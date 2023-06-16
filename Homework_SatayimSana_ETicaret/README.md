@@ -5,9 +5,13 @@ bu halde artık teslim etmem lazım ki son ödeve konu yetiştireyim bu sebep il
 
 Önemli not: Dil bilgim zayıftır çok takmamaya çalışın
 database için -> [DB](Github/DB.sql)
+
 Ekler
+
 1-) [Hangfire nedir (mantıken koda vaktim yoktu)](Github/MDs/HangFire.md)
+
 2-) diğerleri için önce mvc yi halletmem lazım. bunları yapamıyorum yoksa anksiyetem tutuyor bir şeyi tam bilmeden geçince
+
 
 
 mvc ile vakit kaybettiğim için ef core tarafıda istediğim gibi olmadı yine kurallara uygun fakat içime sinmedi.
