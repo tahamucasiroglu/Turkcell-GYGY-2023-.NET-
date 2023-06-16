@@ -1,0 +1,72 @@
+﻿@*@model List<ProductList>*@
+@model PaginationProductViewModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+@*<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td><img src="@item.ImageURl"></td>
+                <td>@item.Name</td>
+                <td>@item.Price</td>
+            </tr>
+        }
+    </tbody>
+</table>*@
+
+
+
+<div class="container">
+    <div class="row">
+        @foreach (var item in Model.Products)
+        {
+            <div class="col-md-3">
+                <a href="@Url.Action("Index", "Product", new { id = item.Id })" class="card mb-4">
+                    <img src="@item.ImageURl" class="card-img-top" alt="Product Image">
+                    <div class="card-body">
+                        <h5 class="card-title">@item.Name</h5>
+                        <p class="card-text">Price: @item.Price</p>
+                    </div>
+                </a>
+            </div>
+        }
+    </div>
+</div>
+
+@for (int i = 1; i < Model.PagingInfo.TotalPages; i++)
+{
+    if(i == Model.PagingInfo.CurrentPage)
+    {
+        <div>
+            <button style="background-color: green">
+                <a href="@Url.Action("Index", "Home", new { id = i })">@i</a>
+            </button>
+        </div>
+    }
+    else
+    {
+        <div>
+            <button>
+                <a href="@Url.Action("Index", "Home", new { id = i })">@i</a>
+            </button>
+        </div>
+    }
+}
+
+
+
+

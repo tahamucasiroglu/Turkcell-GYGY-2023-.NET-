@@ -1,0 +1,65 @@
+﻿@using Microsoft.AspNetCore.Http
+@using System.Text.Json;
+@inject IHttpContextAccessor HttpContextAccessor
+
+@{
+    List<CategoryViewModel> categories = HttpContextAccessor.HttpContext.RequestServices.GetRequiredService<List<CategoryViewModel>>();
+    //ProductBasket productBasket = JsonSerializer.Deserialize<ProductBasket>(HttpContextAccessor.HttpContext.Session.GetString("basket")) ?? new ProductBasket();
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - SatayimSana.WebUI</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/SatayimSana.WebUI.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+       @* <button>
+            <a href="@Url.Action("Index", "Basket")">
+                Sepet - @productBasket.Count()
+            </a>
+        </button>*@
+        <div class="navbar">
+            @foreach (var item in categories)
+            {
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        <a href="@Url.Action("MainCategoryPage", "Product", new { id = item.MainCategory.Id, page = 1})">
+                            @item.MainCategory.Name
+                        </a>
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        @foreach (var sub in item.SubCategories)
+                        {
+                            <a href="@Url.Action("SubCategoryPage", "Product", new { id = sub.Id, page = 1})">@sub.Name</a>
+                        }
+                    </div>
+                </div>
+            }
+        </div>
+    </header>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2023 - SatayimSana.WebUI - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+﻿@model ProductPageModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<p>@Model.mainCategory.Name -> @Model.SubCategory.Name </p>
+
+<h1>@Model.product.Name</h1>
+
+<img src="@Model.product.ImageURl" class="card-img-top" alt="Product Image">
+
+<h2>Fiyat = @Model.product.Price</h2>
+
+<p>Özellikler</p>
+@foreach (var item in Model.categoryFeatureItems)
+{
+
+    <p>@item.Name</p>
+}
+
+<h3>@Model.product.Describtions</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,48 @@
+﻿@model SatayimSana.WebUI.Models.UserLoginModel
+<h1>Giriş Yap</h1>
+<h2>i -> [1,100)</h2>
+<h2>email = kullanici{i}@@gmail.com</h2>
+<h2>şifre = i</h2>
+
+<p>
+    örnek Admin
+        kullanici1@gmail.com
+        1
+
+    örnek Satıcı
+        kullanici5@gmail.com
+        5
+
+    örnek kullanıcı
+        kullanici15@gmail.com
+        15
+</p>
+
+
+
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Login" asp-route-gidilecekSayfa="@ViewBag.ReturnUrl">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Password" class="control-label"></label>
+                <input asp-for="Password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Giriş Yap" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>

@@ -1,0 +1,47 @@
+﻿@*@model List<ProductList>*@
+@model (PaginationProductViewModel,int)
+@{
+    ViewData["Title"] = " main category";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<div class="container">
+    <div class="row">
+        @foreach (var item in Model.Item1.Products)
+        {
+            <div class="col-md-3">
+                <a href="@Url.Action("Index", "Product", new { id = item.Id })" class="card mb-4">
+                    <img src="@item.ImageURl" class="card-img-top" alt="Product Image">
+                    <div class="card-body">
+                        <h5 class="card-title">@item.Name</h5>
+                        <p class="card-text">Price: @item.Price</p>
+                    </div>
+                </a>
+            </div>
+        }
+    </div>
+</div>
+
+@for (int i = 1; i < Model.Item1.PagingInfo.TotalPages; i++)
+{
+    if (i == Model.Item1.PagingInfo.CurrentPage)
+    {
+        <div>
+            <button style="background-color: green">
+                <a href="@Url.Action("MainCategoryPage", "Product", new {id = Model.Item2, page = i })">@i</a>
+            </button>
+        </div>
+    }
+    else
+    {
+        <div>
+            <button>
+                <a href="@Url.Action("MainCategoryPage", "Product", new {id = Model.Item2, page = i })">@i</a>
+            </button>
+        </div>
+    }
+}

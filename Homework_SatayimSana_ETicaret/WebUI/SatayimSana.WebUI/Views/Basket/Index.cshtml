@@ -1,0 +1,29 @@
+﻿@model ProductBasket
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+
+<h1>total ücret = @Model.TotalPrice()</h1>
+
+<button asp-controller="Basket" asp-action="ClearAll">
+    Hepsini temizle
+</button>
+
+<div class="container">
+    <div class="row">
+        @foreach (var item in Model.Get())
+        {
+            <div class="col-md-3">
+                <a href="@Url.Action("Index", "Product", new { id = item.Id })" class="card mb-4">
+                    <img src="@item.ImageURl" class="card-img-top" alt="Product Image">
+                    <div class="card-body">
+                        <h5 class="card-title">@item.Name</h5>
+                        <p class="card-text">Price: @item.Price</p>
+                    </div>
+                </a>
+            </div>
+        }
+    </div>
+</div>
