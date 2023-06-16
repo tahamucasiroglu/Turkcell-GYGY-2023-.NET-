@@ -4,6 +4,7 @@ bu halde artık teslim etmem lazım ki son ödeve konu yetiştireyim bu sebep il
 **üyelik** uygulandı(üyelik uygulandıda nasıl çalıştığına dair fikrim yok kafam almıyor nedense)
 
 Önemli not: Dil bilgim zayıftır çok takmamaya çalışın
+
 database için -> [DB](Github/DB.sql)
 
 Ekler
